@@ -43,7 +43,6 @@ USER_MESSAGE = "What is the largest planet in our solar system?"
 response = client.chat.completions.create(
     model=MODEL_NAME,
     temperature=0.7,
-    n=1,
     messages=[
         {"role": "system", "content": SYSTEM_MESSAGE},
         {"role": "user", "content": "What is the capital of France?"},

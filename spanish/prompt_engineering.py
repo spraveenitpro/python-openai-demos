@@ -45,7 +45,6 @@ USER_MESSAGE = """
 response = client.chat.completions.create(
     model=MODEL_NAME,
     temperature=0.7,
-    n=1,
     messages=[
         {"role": "system", "content": SYSTEM_MESSAGE},
         {"role": "user", "content": USER_MESSAGE},
