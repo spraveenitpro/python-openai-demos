@@ -40,12 +40,7 @@ while True:
     response = client.chat.completions.create(
         model=MODEL_NAME,
         messages=messages,
-        temperature=1,
-        max_tokens=400,
-        top_p=0.95,
-        frequency_penalty=0,
-        presence_penalty=0,
-        stop=None,
+        temperature=0.5,
     )
     bot_response = response.choices[0].message.content
     messages.append({"role": "assistant", "content": bot_response})

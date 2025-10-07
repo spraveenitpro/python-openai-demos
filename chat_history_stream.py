@@ -40,13 +40,7 @@ while True:
     response = client.chat.completions.create(
         model=MODEL_NAME,
         messages=messages,
-        temperature=1,
-        max_tokens=400,
-        top_p=0.95,
-        frequency_penalty=0,
-        presence_penalty=0,
-        stop=None,
-        stream=True,
+        temperature=0.7,
     )
 
     print("\nAnswer: ")
