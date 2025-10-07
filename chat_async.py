@@ -42,12 +42,7 @@ async def generate_response(location):
                 "content": f"Name a single place I should visit on my trip to {location} and describe in one sentence",
             },
         ],
-        temperature=1,
-        max_tokens=400,
-        top_p=0.95,
-        frequency_penalty=0,
-        presence_penalty=0,
-        stop=None,
+        temperature=0.7,
     )
     print("Got response for ", location)
     return response.choices[0].message.content
